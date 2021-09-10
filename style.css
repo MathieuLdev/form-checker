@@ -23,7 +23,7 @@ form {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 115px 20px 0;
+    padding: 70px 20px 0;
     background: rgba(255, 220, 220, 0.664);
     border-radius: 100%;
     width: 580px;
@@ -32,10 +32,18 @@ form {
     flex-direction: column;
 }
 
+span {
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+    top: 58px;
+}
+
 [class*="container"] {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 20px;
+    margin: 0 auto 44px;
+    position: relative;
 }
 
 input, label, span, p {
@@ -48,10 +56,6 @@ input {
     border-radius: 5px;
     padding-left: 5px;
     font-size: 1.1rem;
-}
-
-input[type="email"] {
-    margin-bottom: -20px;
 }
 
 button[type="submit"] {
@@ -70,9 +74,9 @@ button[type="submit"] {
     box-shadow: 0 0 10px black;
 }
 
-.email-container span {
+/* .email-container span {
     visibility: hidden;
-}
+} */
 
 button[type="submit"]:hover {
    background-position: right center;
@@ -83,3 +87,19 @@ button[type="submit"]:hover {
  button[type="submit"]:active {
      transform: translateY(20%);
  }
+
+
+form::after {
+    content: url(./assets/star.png);
+    position: absolute;
+    transform: scale(0.15) translateY(-10%);
+    top: -50%;
+    left: 30px;
+}
+
+.error span{
+    color: red;
+    font-size: 1rem;
+    visibility: visible;
+    opacity: 1;
+}
