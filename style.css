@@ -23,11 +23,11 @@ form {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 70px 20px 0;
+    padding: 80px 20px 0;
     background: rgba(255, 220, 220, 0.664);
     border-radius: 100%;
-    width: 580px;
-    height: 580px;
+    width: 620px;
+    height: 620px;
     display: flex;
     flex-direction: column;
 }
@@ -74,10 +74,6 @@ button[type="submit"] {
     box-shadow: 0 0 10px black;
 }
 
-/* .email-container span {
-    visibility: hidden;
-} */
-
 button[type="submit"]:hover {
    background-position: right center;
    color: #fff;
@@ -92,7 +88,7 @@ button[type="submit"]:hover {
 form::after {
     content: url(./assets/star.png);
     position: absolute;
-    transform: scale(0.15) translateY(-10%);
+    transform: scale(0.15) translate(20%, 18%);
     top: -50%;
     left: 30px;
 }
@@ -102,4 +98,39 @@ form::after {
     font-size: 1rem;
     visibility: visible;
     opacity: 1;
+}
+
+.password-container span {
+    top: 66px
+}
+
+.password-container {
+    margin-bottom: 42px;
+}
+
+p {
+    width: 33%;
+    background: red;
+    height: 6px;
+    border-radius: 10px;
+    margin: 2px 0;
+    visibility: hidden;
+}
+
+.progressRed {
+    width: 33%;
+    background: red;
+    visibility: visible;
+}
+
+.progressBlue {
+    width: 66%;
+    background: #16d9e7;
+    visibility: visible;
+}
+
+.progressGreen {
+    width: 100%;
+    background: #5ef9a4;
+    visibility: visible;
 }
